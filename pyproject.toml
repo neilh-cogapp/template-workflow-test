@@ -1,0 +1,26 @@
+[project]
+name = "template-workflow-test"
+version = "0.1"
+description = "null"
+readme = "README.md"
+authors = [{name = "Neil Hawkins"}]
+license = {text = "Apache-2.0"}
+requires-python = ">=3.8"
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "click"
+]
+
+[project.urls]
+Homepage = "https://github.com/neilh-cogapp/template-workflow-test"
+Changelog = "https://github.com/neilh-cogapp/template-workflow-test/releases"
+Issues = "https://github.com/neilh-cogapp/template-workflow-test/issues"
+CI = "https://github.com/neilh-cogapp/template-workflow-test/actions"
+
+[project.entry-points.console_scripts]
+template-workflow-test = "template_workflow_test.cli:cli"
+
+[project.optional-dependencies]
+test = ["pytest"]
